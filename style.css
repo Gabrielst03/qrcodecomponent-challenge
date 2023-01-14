@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+
+
+* {
+    font-family: 'Outfit';
+    color: var(--text);
+}
+
+:root {
+    --text: hsl(218, 44%, 22%);
+    --bgcolor: hsl(212, 45%, 89%);
+    --desc: hsl(220, 15%, 55%);
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    border-radius: 16px;
+    background-color: white;
+    padding: 16px;
+    align-items: center;
+}
+
+.qrimage {
+    border-radius: 16px;
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+
+}
+
+.texts {
+    text-align: center;
+}
+
+span {
+    color: hsl(220, 15%, 55%);
+    font-size: 18px;
+}
+
+.btn {
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    background-color: #2C7DFA;
+    margin-top: 16px;
+    transition: all .3s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #256dda;
+}
+
+/* Adding Responsive */
+@media screen and (max-width: 650px) {
+    .box {
+        width: 300px;
+        height: 530px;
+    }
+
+    .btn {
+        height: 45px;
+        font-size: 14px;
+
+    }
+}
